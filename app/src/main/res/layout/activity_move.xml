@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MoveActivity">
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Profile"
+        android:textAlignment="center"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:paddingTop="40dp"
+        android:paddingBottom="20dp"
+        android:textColor="@color/teal_700"
+        />
+
+    <ImageView
+        android:id="@+id/my_image_view"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_below="@id/textView"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/image2"
+        tools:layout_editor_absoluteX="160dp"
+        tools:layout_editor_absoluteY="98dp" />
+
+    <TextView
+        android:id="@+id/nama"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="20dp"
+        android:paddingBottom="20dp"
+        android:layout_below="@id/my_image_view"
+        android:text="Aliilah Kalyca Raniah"
+        android:textAlignment="center"
+        android:textSize="25dp"
+        android:textColor="@color/teal_700">
+
+    </TextView>
+
+    <TextView
+        android:id="@+id/deskripsi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_below="@id/nama"
+        android:text="Saya merupakan siswa aktif di SMK Telkom malang jurusan Rekayasa Perangkat Lunak. Saya memiliki pengalaman dalam berorganisasi, perlombaan, dan mengerjakan real project. Saya merupakan seorang designer graphic dan UI UX dengan pengalaman 5 tahun, selain itu saya merupakan seseorang yang suka mempelajari hal baru."
+        android:textAlignment="center"
+        />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/deskripsi"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/button"
+        android:text="edit profile"
+        android:textColor="@color/white"
+        />
+
+</RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
